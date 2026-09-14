@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Currency_Anomalies_Count__c</fullName>
+    <label>Currency Anomalies Count</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <description>Count of gift records with a negative amount, a zero amount on a Closed Won stage, or a currency code that doesn't match the org's active currencies. Lower is better.</description>
+</CustomField>

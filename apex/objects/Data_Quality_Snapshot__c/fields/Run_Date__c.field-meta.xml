@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Run_Date__c</fullName>
+    <label>Run Date</label>
+    <type>DateTime</type>
+    <description>When this snapshot's batch job completed. Set by DataQualityScorecardBatch.finish(), never hand-edited.</description>
+</CustomField>

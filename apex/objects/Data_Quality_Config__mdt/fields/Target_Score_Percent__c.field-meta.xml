@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Score_Percent__c</fullName>
+    <label>Target Score %</label>
+    <type>Number</type>
+    <precision>5</precision>
+    <scale>2</scale>
+    <required>true</required>
+    <description>The score threshold to treat as "acceptable," stored as a 0-100 percent. Set to 70 to match CCC's published 7-out-of-10 audit line.</description>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unlinked_Soft_Credits_Count__c</fullName>
+    <label>Unlinked Soft Credits Count</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <description>Count of soft credit records pointing at a Contact Id that no longer resolves to a real Contact. Lower is better.</description>
+</CustomField>

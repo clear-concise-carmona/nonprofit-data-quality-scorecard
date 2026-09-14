@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stale_Contacts_Percent__c</fullName>
+    <label>Stale Contacts %</label>
+    <type>Percent</type>
+    <precision>5</precision>
+    <scale>2</scale>
+    <description>Percent of Contacts with no logged Activity/Task and no Opportunity/GiftTransaction touch within the configured stale-contact window (see Data_Quality_Config__mdt). Lower is better.</description>
+</CustomField>

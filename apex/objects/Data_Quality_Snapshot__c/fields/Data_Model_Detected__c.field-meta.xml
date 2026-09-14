@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Model_Detected__c</fullName>
+    <label>Data Model Detected</label>
+    <type>Text</type>
+    <length>40</length>
+    <description>Which fundraising data model this run detected and scored against: NPSP, Nonprofit Cloud, or Mixed. See DataQualityMetrics.detectDataModel().</description>
+</CustomField>

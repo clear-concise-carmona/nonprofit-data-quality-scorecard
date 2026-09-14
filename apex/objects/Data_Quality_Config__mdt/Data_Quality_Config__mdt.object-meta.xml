@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Data Quality Config</label>
+    <pluralLabel>Data Quality Configs</pluralLabel>
+    <visibility>Public</visibility>
+    <description>Configurable thresholds for the scorecard - stale-contact window and the target score line. Edit the Default record's values, don't hardcode thresholds in Apex.</description>
+</CustomObject>

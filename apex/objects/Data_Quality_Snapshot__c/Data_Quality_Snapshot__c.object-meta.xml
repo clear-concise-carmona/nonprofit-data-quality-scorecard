@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Data Quality Snapshot</label>
+    <pluralLabel>Data Quality Snapshots</pluralLabel>
+    <nameField>
+        <type>AutoNumber</type>
+        <label>Snapshot Number</label>
+        <displayFormat>DQS-{0000}</displayFormat>
+    </nameField>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <sharingModel>ReadWrite</sharingModel>
+    <enableActivities>false</enableActivities>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <visibility>Public</visibility>
+    <description>One record per scorecard run. Written only by DataQualityScorecardService - never edited by hand.</description>
+</CustomObject>

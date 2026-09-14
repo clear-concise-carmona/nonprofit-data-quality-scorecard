@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stale_Contact_Threshold_Months_Used__c</fullName>
+    <label>Stale Contact Threshold (Months) Used</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <description>The Stale_Contact_Threshold_Months__c value read from Data_Quality_Config__mdt at the time this run executed. Recorded per-snapshot so trend charts stay honest if the threshold is changed later.</description>
+</CustomField>

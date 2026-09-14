@@ -1,0 +1,67 @@
+.score-box {
+    border: 3px solid #706e6b;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.score-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.score-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #3e3e3c;
+}
+
+.score-sublabel {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+.metric-row {
+    display: grid;
+    grid-template-columns: 12rem 1fr 4rem;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0;
+}
+
+.metric-label {
+    font-size: 0.85rem;
+}
+
+.metric-bar-track {
+    background-color: #e5e5e5;
+    border-radius: 0.25rem;
+    height: 0.6rem;
+    overflow: hidden;
+}
+
+.metric-bar-fill {
+    background-color: #1589ee;
+    height: 100%;
+}
+
+.metric-value {
+    text-align: right;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.metric-not-applicable {
+    grid-column: 2 / span 2;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #706e6b;
+}
+
+.notes-text {
+    white-space: pre-wrap;
+    font-size: 0.8rem;
+}

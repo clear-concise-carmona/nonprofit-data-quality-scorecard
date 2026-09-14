@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_Preference_Coverage_Percent__c</fullName>
+    <label>Channel Preference Coverage %</label>
+    <type>Percent</type>
+    <precision>5</precision>
+    <scale>2</scale>
+    <description>Percent of Contacts with an explicit communication/channel preference on file (not blank/default). Higher is better.</description>
+</CustomField>

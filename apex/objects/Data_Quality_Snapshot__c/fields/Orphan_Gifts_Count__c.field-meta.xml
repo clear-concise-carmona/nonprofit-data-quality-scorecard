@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Orphan_Gifts_Count__c</fullName>
+    <label>Orphan Gifts Count</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <description>Count of gift records (Opportunity+npsp__Payment__c, or GiftTransaction) with no linked donor/account. Lower is better.</description>
+</CustomField>

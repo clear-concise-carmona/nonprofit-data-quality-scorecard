@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Missing_Gau_Allocations_Count__c</fullName>
+    <label>Missing GAU Allocations Count</label>
+    <type>Number</type>
+    <precision>18</precision>
+    <scale>0</scale>
+    <description>Count of closed-won gifts with no General Accounting Unit allocation record. Lower is better.</description>
+</CustomField>

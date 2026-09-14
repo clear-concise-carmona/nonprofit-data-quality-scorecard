@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Fields_To_Check__c</fullName>
+    <label>Required Fields To Check</label>
+    <type>Text</type>
+    <length>255</length>
+    <required>false</required>
+    <description>Comma-separated list of Object.Field pairs your org treats as required for a usable donor record, e.g. "Contact.MobilePhone,Contact.Description". "Required" is org-specific, so this is deliberately configurable rather than a fixed list. Defaults to Contact.MobilePhone if left blank.</description>
+</CustomField>

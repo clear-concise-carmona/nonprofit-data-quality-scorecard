@@ -1,0 +1,63 @@
+<template>
+    <lightning-card title="Data Quality Scorecard" icon-name="standard:health_cloud_and_life_sciences">
+        <div class="slds-p-horizontal_medium slds-p-bottom_medium">
+
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+            </template>
+
+            <template if:true={loadError}>
+                <div class="slds-text-color_error">{loadError}</div>
+            </template>
+
+            <template if:true={hasSnapshot}>
+                <div class="slds-grid slds-gutters slds-wrap slds-m-bottom_medium">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+                        <div class="score-box" style={scoreBoxStyle}>
+                            <div class="score-number">{formattedScore}</div>
+                            <div class="score-label">Overall Score</div>
+                            <div class="score-sublabel">{scoreVerdict}</div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_2-of-3">
+                        <p><strong>Data model detected:</strong> {snapshot.Data_Model_Detected__c}</p>
+                        <p><strong>Last run:</strong> <lightning-formatted-date-time value={snapshot.Run_Date__c} year="numeric" month="short" day="2-digit" hour="2-digit" minute="2-digit"></lightning-formatted-date-time></p>
+                        <p><strong>Stale-contact window used:</strong> {snapshot.Stale_Contact_Threshold_Months_Used__c} months</p>
+                    </div>
+                </div>
+
+                <div class="slds-m-bottom_small">
+                    <h3 class="slds-text-heading_small slds-m-bottom_x-small">Metrics</h3>
+                    <template for:each={metricRows} for:item="row">
+                        <div key={row.key} class="metric-row">
+                            <div class="metric-label">{row.label}</div>
+                            <template if:true={row.applicable}>
+                                <div class="metric-bar-track">
+                                    <div class="metric-bar-fill" style={row.barStyle}></div>
+                                </div>
+                                <div class="metric-value">{row.displayValue}</div>
+                            </template>
+                            <template if:false={row.applicable}>
+                                <div class="metric-not-applicable">Not applicable</div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+
+                <template if:true={snapshot.Notes__c}>
+                    <div class="slds-box slds-theme_shade slds-m-top_medium">
+                        <h3 class="slds-text-heading_small slds-m-bottom_x-small">Notes</h3>
+                        <pre class="notes-text">{snapshot.Notes__c}</pre>
+                    </div>
+                </template>
+            </template>
+
+            <template if:false={hasSnapshot}>
+                <template if:false={isLoading}>
+                    <p>No scorecard runs yet. Run <code>scripts/run-scorecard.apex</code> in your org, or wait for the scheduled job, then reload this dashboard.</p>
+                </template>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

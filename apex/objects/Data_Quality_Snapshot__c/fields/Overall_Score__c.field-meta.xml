@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overall_Score__c</fullName>
+    <label>Overall Score</label>
+    <type>Percent</type>
+    <precision>5</precision>
+    <scale>2</scale>
+    <description>Weighted composite score, 0-100, stored as a percent field so dashboards can render it as a bar directly. Divide by 10 to compare against CCC's published 7/10 threshold.</description>
+</CustomField>
